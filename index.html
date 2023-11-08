@@ -6,12 +6,19 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950"> 
+<body class=""> 
 <div class="h-screen w-full grid place-items-center">
     <div>
         <label for="dateCTA">
-            <h1 class="text-center text-white font-bold m-5">Ian Restrepo :D</h1>
-            <button class="px-4 py-3 border border-indigo-500 font-bold text-white rounded-md hover:-translate-y-3 hover:shadow-lg hover:shadow-indigo-500 transition-all" onclick=showDate()>Mostrar Fecha</button>
+            <h1 class="text-center text-black font-bold m-5">Ian Restrepo :D</h1>
+            <a href="#_" class="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
+                <span class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+                <span class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+                <span class="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+                <span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+                <span class="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
+                <span class="relative transition-colors duration-300 delay-200 group-hover:text-white ease"onclick=showDate()>Mostrar Fecha</span>
+                </a>
         </label>
     </div>
 </div>
